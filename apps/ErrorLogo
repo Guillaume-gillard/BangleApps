@@ -1,0 +1,16 @@
+Bangle.setLCDPower(1);
+Bangle.setLCDTimeout(0);
+
+function getImage() {
+  return
+require("heatshrink").decompress(atob("oFAwkBiIAr7oAEDrohYDxIgUDxYgSDxogQDx4gOjofR6I+dIBg+SIBgUJ73tICQ+K73uICRUK9wfKIA4+M9xgKIAwxKD5pAGLxhgRbhYfDMB5+ND6I+OMCAfQIBReSMB4fKDYVAghgMD4ReNgEAQB5eND4iAMD59OIBgfLTYY/ED5aeJXogfFMBIfPqAfEIBPRD5IYEqEFD64+ED45gID9IXED45gID59AggHFIA4fILwofZCwvu8EOBAwfWABBAGD45eGD7AWH8lOBI4XFiMRD5rfHD5xeIgEAMBofPqAfIIAofGChFFqgfPUAa9QMA/RD8JgDDyZgEDwQfgMARfUD4ReDQAgAWD4jhFACgeED8BgYLwpAZDwxAXHw5AXDxBAVHxJAVDxRATHxZATDxggRDxwgPDyAgNDyQgLDyjGHXBoAf"));
+}
+
+var ang = 0;
+
+function draw() {
+  ang += 0.1;
+  g.drawImage(getImage(),120,120,{scale:2, rotate:ang});
+}
+
+setInterval(draw, 50);
