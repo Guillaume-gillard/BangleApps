@@ -2492,3 +2492,17 @@
   ]
 }
 ]
+},
+{ "id": "ErrorLogo",
+  "name": "Error Logo",
+  "shortName":"ERROR",
+  "icon": "ErrorLogo-icon.js",
+  "version":"0.01",
+  "description": "This is just a error logo turning on your screen",
+  "tags": "",
+  "storage": [
+    {"name":"ErrorLogo.app.js","url":"app.js"},
+    {"name":"ErrorLogo.img","url":"app-icon.js","evaluate":true}
+  ]
+}
+]
